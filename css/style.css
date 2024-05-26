@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-body: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.border {
+  border: 1px solid var(--very-dark-blue-line);
+  margin: 20px 0 10px 0;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue-body);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.nft-card {
+  background-color: var(--very-dark-blue-card);
+  border-radius: 13px;
+  text-align: left;
+  max-width: 350px;
+  padding: 20px;
+}
+
+.image {
+  position: relative;
+}
+
+.image div {
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.6);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.image div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 13px;
+}
+
+.image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.for-hover-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+}
+
+.content {
+  padding: 0 0 0 10px;
+}
+
+.text h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0 20px 0;
+}
+
+.text h1:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.text p {
+  opacity: 0.5;
+  padding-bottom: 25px;
+}
+
+.eth-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.eth-row h3 {
+  color: var(--cyan);
+  font-size: 16px;
+  font-weight: 600;
+}
+.eth-row h3, .eth-row h3 img {
+  display: flex;
+  align-items: center;
+  padding: 0 5px 0 0;
+}
+.eth-row p {
+  font-size: 16px;
+  opacity: 0.5;
+  font-weight: 400;
+}
+.eth-row p, .eth-row p img {
+  display: flex;
+  align-items: center;
+  padding: 0 5px 0 0px;
+}
+
+.footer {
+  margin: 20px 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+.footer img {
+  display: block;
+  block-size: 32px;
+  border-radius: 50%;
+  border: 0.75px solid var(--white);
+}
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--soft-blue);
+  padding: 0 0px 0 15px;
+}
+.footer .span {
+  color: var(--white);
+}
+.footer .span:hover {
+  cursor: pointer;
+  color: var(--cyan);
+  padding: 6px 0;
+}
+
+@media (max-width: 374px) {
+  .nft-card {
+    max-width: 300px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
